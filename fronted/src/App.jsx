@@ -198,7 +198,7 @@ function App() {
           className="download-btn"
           onClick={() =>
             window.open(
-              `http://localhost:5000/api/download?text=${encodeURIComponent(summary)}`
+              `https://notesquizapp.onrender.com/api/download?text=${encodeURIComponent(summary)}`
             )
           }
         >
