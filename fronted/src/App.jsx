@@ -44,7 +44,7 @@ function App() {
     formData.append("notes", file);
 
     try {
-      const res = await fetch("http://13.10.1.168:5000/api/upload", {
+      const res = await fetch("https://notesquizapp.onrender.com/api/upload", {
         method: "POST",
         body: formData,
       });
