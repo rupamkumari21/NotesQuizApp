@@ -1,0 +1,530 @@
+html,
+body,
+#root{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x:hidden;
+    background:#f4f7fc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+    width:100%;
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+nav h2{
+    color:#fff;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav li{
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav li:hover{
+    color:#ffd43b;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    width:100%;
+    margin:0;
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    color:#000000;
+
+}
+
+.hero h1{
+
+    color:#1a1a1a;
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+    
+    color:#333333;
+    font-size:18px;
+
+    margin-bottom:25px;
+
+}
+
+.hero button{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border:none ;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    font-weight: 600;
+
+    cursor:pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+.hero button:hover,
+.get-started-btn:hover{
+    background:#1d4ed8;
+    transform: translate(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4)
+
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    flex:1;
+
+    min-width:280px;
+
+    max-width:330px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   COMMON SECTION
+========================== */
+
+.upload-section,
+.preview-section,
+.summary-section,
+.quiz-section,
+.keypoints-section,
+.download-section{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:35px auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.upload-section{
+
+    text-align:center;
+    color: #2563eb;
+}
+/* ==========================
+   UPLOAD
+========================== */
+
+input[type="file"]{
+    width:fit-content;
+    margin:20px 0;
+    padding:10px;
+    border:2px dashed #2563eb;
+    border-radius:10px;
+    background:#f8fbff;
+    cursor:pointer;
+}
+
+button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.download-btn{
+    display:block;
+    margin:0 auto;
+    width:220px;
+}
+
+/* ==========================
+   PREVIEW
+========================== */
+
+.preview-section p{
+
+    text-align:center;
+
+    margin-top:10px;
+
+    word-break:break-word;
+
+}
+
+/* ==========================
+   SUMMARY
+========================== */
+
+.summary-box {
+
+    background:#f8fbff;
+
+    
+    padding:20px;
+
+    border-radius:10px;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+    overflow-wrap:break-word;
+
+    text-align:center;
+
+}
+
+/* ==========================
+   QUIZ
+========================== */
+
+.quiz-section h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.quiz-section p{
+
+    margin:8px 0;
+
+    line-height:1.7;
+    text-align:center;
+
+}
+
+.quiz-section hr{
+
+    margin:25px 0;
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+/* ==========================
+   KEY POINTS
+========================== */
+
+.keypoints-section p{
+
+    margin:12px 0;
+
+    padding-left:15px;
+
+    text-align:center;
+
+    position:relative;
+
+    line-height:1.8;
+
+}
+
+.keypoints-section p::before{
+
+    content:"➜";
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    display: flex;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    margin-top:40px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+nav{
+
+    padding:15px 20px;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    padding:60px 20px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.hero button{
+
+    width:220px;
+
+}
+
+.features{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.card{
+
+    width:100%;
+
+    max-width:350px;
+
+}
+
+.upload-section,
+.preview-section,
+.summary-section,
+.quiz-section,
+.keypoints-section,
+.download-section{
+
+    width:95%;
+
+    padding:20px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+.summary-box{
+
+    font-size:15px;
+
+}
+
+}
+/* ===== Center All Sections ===== */
+
+.preview-section,
+.summary-section,
+.quiz-section,
+.keypoints-section{
+    width:90%;
+    max-width:1000px;
+    margin:35px auto !important;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* Heading Center */
+.preview-section h2,
+.summary-section h2,
+.quiz-section h2,
+.keypoints-section h2{
+    text-align:center;
+    width:100%;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+/* Content */
+.preview-section p,
+.summary-box,
+.quiz-card,
+.keypoints-section p{
+    width:100%;
+    max-width:850px;
+}
+
+/* Summary */
+.summary-box{
+    text-align:center;
+}
+
+/* Quiz */
+.quiz-card{
+    background:#f8fbff;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.preview-section,
+.summary-section,
+.quiz-section,
+.keypoints-section{
+
+    width:95%;
+    padding:20px;
+
+}
+
+}
